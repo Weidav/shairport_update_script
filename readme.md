@@ -1,12 +1,15 @@
-copy this folder to your pi
+# Shairport Sync update script for Raspberry Pi OS 
+
+download this update script to your pi
 ```
-scp -r shairport_update_script pi:/home/david
+git clone https://github.com/Weidav/shairport_update_script.git
+$ cd shairport_update_script
 ```
+
 <br>
 
 connect to your pi and execute the the first script with root privileges
 ```
-cd shairport_update_script
 sudo ./update.sh
 ```
 <br>
