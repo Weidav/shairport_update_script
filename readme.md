@@ -10,14 +10,12 @@ If you install Shairport Sync for the first time, follow the instructions on the
 ## Shairport Sync
 [Shairport Sync](https://github.com/mikebrady/shairport-sync) is an [AirPlay](https://www.pocket-lint.com/speakers/news/apple/144646-apple-airplay-2-vs-airplay-what-s-the-difference) audio player for Linux and FreeBSD. It plays audio streamed from Apple devices and from AirPlay sources such as [OwnTone](https://github.com/owntone/owntone-server) (formerly `forked-daapd`).
 
-
-
 ## Update guide
 
 Download this update script to your pi
 ```
 git clone https://github.com/Weidav/shairport_update_script.git
-$ cd shairport_update_script
+cd shairport_update_script
 ```
 
 <br>
