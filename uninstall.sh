@@ -7,8 +7,7 @@ cp /etc/shairport-sync.conf /etc/shairport-sync.conf.bak
 
 # Remove Old Copies of Shairport Sync
 shairport_dir=$(which shairport-sync)
-rm -rf "$shairport_dir"
-if [ $? -eq 0 ]; then
+if rm -rf "$shairport_dir"; then
     echo "Successfully deleted old Shairport Sync copy"
 else
     echo "Could not delete old Shairport Sync copy" >&2
