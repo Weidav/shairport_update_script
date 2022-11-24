@@ -6,7 +6,7 @@ cd ~/ || exit
 
 # Get Tools and Libraries
 apt update
-apt upgrade
+apt upgrade -y
 apt install --no-install-recommends build-essential git autoconf automake libtool \
     libpopt-dev libconfig-dev libasound2-dev avahi-daemon libavahi-client-dev libssl-dev libsoxr-dev \
     libplist-dev libsodium-dev libavutil-dev libavcodec-dev libavformat-dev uuid-dev libgcrypt-dev xxd
