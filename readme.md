@@ -22,7 +22,7 @@ cd shairport_update_script
 
 Connect to your pi and execute the the first script with root privileges
 ```
-sudo ./update.sh
+sudo ./uninstall.sh
 ```
 <br>
 
