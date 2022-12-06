@@ -12,7 +12,7 @@ If you install Shairport Sync for the first time, follow the instructions on the
 
 ## Update guide
 
-Download this update script to your pi
+Connect to your pi and download this update script
 ```
 git clone https://github.com/Weidav/shairport_update_script.git
 cd shairport_update_script
@@ -20,7 +20,7 @@ cd shairport_update_script
 
 <br>
 
-Connect to your pi and execute the the first script with root privileges
+Execute the the first script with root privileges
 ```
 sudo ./uninstall.sh
 ```
