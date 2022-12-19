@@ -2,7 +2,7 @@
 
 # run script with root privileges
 
-cd ~/ || exit
+cd || exit
 
 # Get Tools and Libraries
 apt update
@@ -18,8 +18,10 @@ else
     echo "Could not delet old NQPTP copy" >&2
 fi
 
+rm -rf nqptp
 git clone https://github.com/mikebrady/nqptp.git
 cd nqptp || exit
+
 autoreconf -fi
 ./configure --with-systemd-startup
 make
@@ -29,8 +31,10 @@ systemctl restart nqptp
 
 # Build & Install Shairport Sync
 cd || exit
+rm -rf shairport-sync
 git clone https://github.com/mikebrady/shairport-sync.git
 cd shairport-sync || exit
+
 autoreconf -fi
 ./configure --sysconfdir=/etc --with-alsa \
     --with-soxr --with-avahi --with-ssl=openssl --with-systemd --with-airplay-2
